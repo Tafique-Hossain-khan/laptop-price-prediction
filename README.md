@@ -48,9 +48,9 @@ This project aims to predict the price of a laptop based on various features suc
      ```
 4. Install the required packages:
 
-```bash
-pip install -r requirements.txt
-
+    ```bash
+    pip install -r requirements.txt
+    ```
 
 ## Usage Instructions
 
@@ -58,6 +58,7 @@ pip install -r requirements.txt
 
    ```bash
    streamlit run app.py
+   ```
 Open your web browser and go to the provided URL (usually http://localhost:8501).
 
 Enter the required features for the laptop (Company, TypeName, Inches, ScreenResolution, Cpu, Ram, Memory, Gpu, OpSys, Weight) and click the "Predict" button to get the estimated price.
