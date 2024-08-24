@@ -34,9 +34,9 @@ if __name__ == "__main__":
         pred = PredictPipeline()
         pred.predict(df)
         '''
-        preprocessor = load_object('artifacts/preprocessor_laptop.pkl')
+        preprocessor = load_object('artifacts\preprocessor_laptop.pkl') 
     
-        model = load_object('artifacts/model_laptop.pkl')
+        model = load_object('artifacts\model_laptop.pkl')
 
         scaled_data = preprocessor.transform(df)
         predtion = model.predict(scaled_data)
