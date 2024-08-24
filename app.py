@@ -1,15 +1,16 @@
 import streamlit as st
 import numpy as np
 import pandas as pd
-import joblib  # Assuming your model is saved with joblib
+
 
 from src.utils import load_object
 from src.pipeline.prediction_pipeling import CustomInputLaptop
-from src.utils import load_object
 
 # Load the trained model
-model = load_object('artifacts\model_laptop.pkl')# Replace with your model's filename
-preprocessor = load_object('artifacts\preprocessor_laptop.pkl')
+
+model = load_object('artifacts\model_laptop.pkl')
+preprocessor = load_object('artifacts\preprocessor_laptop.pkl') 
+
 
 st.title("Laptop Price Prediction")
 st.write("Enter the details of the laptop to predict its price:")
